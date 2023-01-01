@@ -1,0 +1,12 @@
+/*-------
+| FONTS |
+------*/
+@font-face {
+	font-family: 'Alata'; /*400*/
+	src: url('../assets/fonts/Alata/Alata-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Josefin-Sans';
+	src: url('../assets/fonts/Alata/Alata-Regular.ttf');
+}

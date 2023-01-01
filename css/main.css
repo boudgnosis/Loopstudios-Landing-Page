@@ -1,0 +1,243 @@
+:root {
+	/*--------
+	| Colors |
+	-------*/
+	/* Primary */
+	--White: hsl(0, 0%, 100%);
+	--Black: hsl(0, 0%, 0%);
+	--Dark-Gray: hsl(0, 0%, 55%);
+	--Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+/*----------------
+| GENERAL STYLES |
+---------------*/
+html,
+body {
+	font-size: .9375rem;
+	min-height: 100vh;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+/*--------
+| HEADER |
+-------*/
+.header {
+	background-image: url(../assets/images/desktop/image-hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 30rem;
+}
+
+/* Menu */
+.header__menu {
+	align-items: center;
+	justify-content: space-between;
+	padding: 2.5em 7em 0 7em;
+	margin-bottom: 5em;
+}
+
+/* logo */
+.logo__container-header {
+	width: 10em;
+}
+
+/* options */
+.header__menu .menu__options-header .options__header-links[data-info~="space__between-options"]  {
+	padding: 0 1em;
+}
+
+.header__menu .menu__options-header .options__header-links .header__links-nav {
+	font-size: .8em;
+	font-family: 'Alata';
+	font-weight: 400;
+	color: var(--White);
+}
+
+/* Title */
+.title__container-header {
+	padding-left:7em;
+}
+
+.title__container-header .header__title {
+	font-family: 'Josefin-Sans';
+	font-size: 4em;
+	font-weight: 300;
+	letter-spacing: 10px;
+	line-height: 1.2;
+	padding: .5em .7em .5em .5em;
+	width: 9em;
+	text-transform: uppercase;
+	color: var(--White);
+	border: 1px solid var(--White);
+}
+
+/*--------------
+| INTRODUCTION |
+-------------*/
+.introduction {
+	padding: 7em 7em;
+	position: relative;
+}
+
+/* Imagen introduction */
+.img__container-introduction {
+	width: 600px;
+}
+
+/* Information */
+.introduction__information {
+	position: absolute;
+	top: 19em;
+	left: 40em;
+	width: 400px;
+	padding: 1em 2em;
+	background-color: var(--White);
+}
+
+.introduction__information-title {
+	font-family: 'Josefin-Sans';
+	font-weight: 300;
+	font-size: 3em;
+	color: var(--Black);
+	text-transform: uppercase;
+	width: 10em;
+}
+
+.introduction__information-text {
+	color: var(--Very-Dark-Gray);
+}
+
+/*---------------
+| SECTION CARDS |
+--------------*/
+.work__sample-cards {
+	padding: 0 7em;
+	margin-bottom: 5em;
+}
+
+/* Title and btn */
+.tilte__work-and-btn {
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 3rem;
+}
+
+.tilte__work-and-btn .title__work {
+	text-transform: uppercase;
+	font-size: 3em;
+	font-family: 'Josefin-Sans';
+	color: var(--Very-Dark-Gray);
+	margin: 0;
+}
+
+.tilte__work-and-btn .button{
+	text-transform: uppercase;
+	font-size: 'Alata';
+	font-size: 1em;
+	background-color: var(--White);
+	letter-spacing: 2px;
+	padding: .2em 1em;
+	border: 1px solid var(--Very-Dark-Gray);
+}
+
+/* Section cards */
+.section__cards {
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.section__cards .work__cards {
+	position: relative;
+	margin-bottom: 1.5em;
+}
+
+.section__cards .work__cards .container__card-img {
+	width: 200px;
+}
+
+.section__cards .work__cards .cards__titles {
+	position: absolute;
+	top: 10em;
+	left: 1em;
+	font-family: 'Josefin-Sans';
+	font-weight: 300;
+	font-size: 1.7em;
+	width: 7.6rem;
+	text-transform: uppercase;
+	color: var(--White);
+}
+
+/*--------
+| FOOTER |
+-------*/
+.footer {
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.5em 7em;
+	background-color: var(--Black);
+}
+
+/* logo */
+.logo__menu-footer .container__logo-footer {
+	width: 8rem;
+	margin-bottom: 1.2em;
+}
+
+/* menu */
+.menu__footer .menu__options-footer .options__links-footer[data-info~="space__between-options-f"] {
+	padding: 0 1em;
+}
+
+.menu__footer .menu__options-footer .options__links-footer .links__menu-footer{
+	color: var(--White);
+	font-size: .7em;
+	font-family: 'Alata';
+}
+ 
+/* rrhh */
+.container__rrhh {
+	justify-content: end;
+}
+
+.container__rrhh .rrhh__icons {
+	justify-content: center;
+	align-items: center;
+	width: 1rem;
+	margin-bottom: 1.2em;
+}
+
+.container__rrhh .rrhh__icons[data-info="space__between-rrhh"] {
+	padding: 0 1em;
+}
+
+.container__rrhh .rrhh__icons[data-info="space__between-rrhh-i"] {
+	padding-left: 1em;
+}
+
+/* copyright */
+.container__copyright .text__copyright {
+	color: var(--Very-Dark-Gray);
+	margin: 0;
+	font-size: .7em;
+}
